@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/header" />
+
+        <ImageButton
+            android:id="@+id/pendingLoan"
+            android:layout_width="148dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="82dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pendingloan" />
+
+        <ImageButton
+            android:id="@+id/moneyLent"
+            android:layout_width="148dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/lentmoney"
+            android:layout_alignTop="@+id/pendingLoan"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/addLoan"
+            android:layout_width="148dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="81dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/addloan"
+            android:layout_below="@+id/pendingLoan"
+            android:layout_alignLeft="@+id/pendingLoan"
+            android:layout_alignStart="@+id/pendingLoan" />
+
+        <ImageButton
+            android:id="@+id/addMoneyLent"
+            android:layout_width="148dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/addmoneylent"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/addLoan"
+            android:layout_alignRight="@+id/moneyLent"
+            android:layout_alignEnd="@+id/moneyLent"
+            android:layout_alignBottom="@+id/addLoan" />
+
+        <TextView
+            android:id="@+id/pendingLoans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pendingLoan"
+            android:layout_alignStart="@+id/pendingLoan"
+            android:layout_below="@+id/pendingLoan"
+            android:text="Pending Loans"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_alignRight="@+id/pendingLoan"
+            android:layout_alignEnd="@+id/pendingLoan" />
+
+        <TextView
+            android:id="@+id/moneyLents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/moneyLent"
+            android:layout_alignStart="@+id/moneyLent"
+            android:layout_below="@+id/moneyLent"
+            android:text="Money Lent"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_alignRight="@+id/moneyLent"
+            android:layout_alignEnd="@+id/moneyLent" />
+
+        <TextView
+            android:id="@+id/addLoans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/addLoan"
+            android:layout_alignStart="@+id/addLoan"
+            android:layout_below="@+id/addLoan"
+            android:text="Add Loan"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_alignRight="@+id/addLoan"
+            android:layout_alignEnd="@+id/addLoan" />
+
+        <TextView
+            android:id="@+id/addMoneyLents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/addMoneyLent"
+            android:layout_alignStart="@+id/addMoneyLent"
+            android:layout_below="@+id/addMoneyLent"
+            android:text="Add Money Lent"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_alignRight="@+id/addMoneyLent"
+            android:layout_alignEnd="@+id/addMoneyLent" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

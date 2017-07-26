@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:background="@drawable/back"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <ScrollView
+        android:id="@+id/scrollmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="3"
+                    android:text="Update Details"
+                    android:textColor="#0900ff"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:text="Name "
+                    android:textColor="#0cf" />
+
+                <TextView
+                    android:id="@+id/name_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#FFF" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date "
+                    android:textColor="#0cf" />
+
+                <TextView
+                    android:id="@+id/daye"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:textSize="28dp" />
+
+                <Button
+                    android:id="@+id/daypickbut"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/editText1"
+                    android:layout_marginLeft="4dp"
+                    android:background="#CCC"
+                    android:text="Date" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reason "
+                    android:textColor="#0cf" />
+
+                <EditText
+                    android:id="@+id/reasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:inputType="text"
+                    android:textColor="#FFF" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount "
+                    android:textColor="#0cf" />
+
+                <EditText
+                    android:id="@+id/amount_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:inputType="number"
+                    android:textColor="#FFF" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <Button
+                    android:id="@+id/update_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#CCC"
+                    android:text="Update" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>
